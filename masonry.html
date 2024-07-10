@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Test</title>
+    <script src="js/jquery-3.7.1.min"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script>
+        $('.grid').masonry({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid-item',
+        // use element for option
+        columnWidth: '.grid-sizer',
+        percentPosition: true
+        })
+    </script>
+    <style>
+        img {width:100%;}
+        main {display:flex; justify-content:center;}
+
+        .grid {outline:1px solid red; width:800px}
+
+        @media screen and (min-width:450px) {
+        .grid {width:400px;}
+        }
+        @media screen and (min-width:650px) {
+        .grid {width:600px;}
+        }
+        @media screen and (min-width:750px) {
+        .grid {width:800px;}
+        }        
+        @media screen and (min-width:950px) {
+        .grid {width:1000px;}
+        }        
+        .grid-item {
+        float: right;
+        width: 200px;
+        border: 0 solid hsla(0, 0%, 0%, 0.5);
+        }
+
+        .grid-item--width2 { width: 400px; }
+        .grid-item--height2 { height: 200px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deane Nettles</h1>
+        <h2>Graphic Designer and Illustrator</h2>
+        <p><a href="mailto:deane@deanenettles.com">deane@deanenettles.com</a></p>
+    </header>
+    <main>
+        <div class="grid">
+            <!-- CONTENTS -->
+            <div class="grid-item"><img src="images/Alt-Another-Bike-Poster-6.jpg" alt="image of poster"></div>
+            <div class="grid-item grid-item--width2"><img src="images/AprilGrieman6_2022.jpg" alt="April Grieman poster"></div>
+            <div class="grid-item"><img src="images/chip-kidd-as-batmanv3.jpg" alt="Chip Kidd Batman poster"></div>
+            <div class="grid-item"><img src="images/Alt-Another-Bike-Poster-6.jpg" alt="image of bike poster"></div>
+            <div class="grid-item grid-item--width2"><img src="images/AprilGrieman6_2022.jpg" alt="April Grieman poster"></div>
+            <div class="grid-item"><img src="images/chip-kidd-as-batmanv3.jpg" alt="Chip Kidd Batman poster"></div>
+        </div> <!-- end GRID -->
+    </main>
+</body>
+</html>

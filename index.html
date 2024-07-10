@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Deane Nettles, Graphic Designer and Illustrator, Baltimore</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- This sets up the file for mobile use -->
+        <meta name="description" content="Deane Nettles is a graphic designer with experience in logo design, brochures, publications, advertising, direct mail, and web design.">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/featherlight.min.css">
+		<link type="text/css" rel="stylesheet" href="css/featherlight.gallery.min.css">
+		<style type="text/css">
+        <style>
+            /* This is where CSS goes */
+             {outline:1px solid red;}
+
+            /* BOX SIZING -- ignores border and padding when measuring width */
+            html {
+            box-sizing: border-box;
+            }
+            *, *:before, *:after {
+            box-sizing: inherit;
+            }
+            
+            /* STRUCTURE */
+            html, body {margin:0; padding:0;}
+            main {padding-top:20px;}
+            #wrap {padding-top:none;}
+            nav {background-color:gray; color:white; margin:0; padding:0;}
+            footer {padding-bottom:40px;}
+            
+            .flex-container {display:flex; justify-content:center; flex-wrap:wrap; flex-direction: row; gap:2.5%;}
+            
+            /* IMAGES */
+            figure {margin:15px 5px; width:300px; height:300px; background-color:gray; border-radius: 12px;}
+            img {width:100%; height:100%; border-radius: 12px;}
+            
+            
+            /* TYPOGRAPHY */
+            html {font-family:sans-serif; text-align:center;}
+            header h1 {margin:40px 0 0 0;}
+            header h2 {margin-top:6px; font-size:20px; font-weight:400; font-style:italic;}
+            
+            /* LINKS */
+            nav ul {padding:10px;}
+            nav li {display:inline; margin:10px;}
+            
+            nav a:link {color:white; text-decoration:none;}
+            
+            header a:link, header a:visited {color:gray; text-decoration:none;}
+            header a:hover, header a:focus {color:black; text-decoration:none;}
+            
+            				/* customized gallery */
+
+				.featherlight-gallery2 {
+					background: rgba(100,100,100,0.5);
+				}
+				.featherlight-gallery2 .featherlight-content {
+					background: #000;
+				}
+				.featherlight-gallery2 .featherlight-next:hover,
+				.featherlight-gallery2 .featherlight-previous:hover {
+					background: rgba(0,0,0,0.5);
+				}
+				.featherlight-gallery2 .featherlight-next:hover span,
+				.featherlight-gallery2 .featherlight-previous:hover span {
+					font-size: 25px;
+					line-height: 25px;
+					margin-top: -12.5px;
+					color: #333131;
+				}
+				.featherlight-gallery2  .featherlight-close {
+					background: transparent;
+					color: #535252;
+					font-size: 1.2em;
+				}
+				.featherlight-gallery2.featherlight-last-slide .featherlight-next,
+				.featherlight-gallery2.featherlight-first-slide .featherlight-previous {
+					display: none;
+				}
+
+        </style>
+</head>
+
+<body>
+    <div id="wrap">
+      <nav>
+          <ul>
+              <li><a href="design.html">Design</a></li>
+              <li><a href="logos.html">Logos</a></li>
+              <li><a href="Ads.html">Advertising</a></li>
+              <li><a href="pubs.html">Publications</a></li>
+            </ul>              
+      </nav>
+      <header>
+          <h1>Deane Nettles</h1>
+          <h2>Graphic Designer and Illustrator</h2>
+          <p><a href="mailto:deane@deanenettles.com">deane@deanenettles.com</a></p>
+      </header>
+      <main class="flex-container">
+        <div class="col-lg-2">
+            <a class="thumbnail gallery2" href="images/StopThinkConnect2.png"><img src="images/StopThinkConnect2.png" /></a>
+        </div>
+         <figure>
+              <img src="images/StopThinkConnect2.png" alt="poster concept for telling people to be more careful when connecting to th Web">
+          </figure>
+
+        <figure>
+              <img src="images/AprilGrieman6_2022.jpg" alt="Poster experiment for April Greiman">
+        </figure>
+          <figure>
+              <img src="images/bicyclist.png" alt="illustration of bicyclist using analagous colors">
+          </figure>
+          <figure>
+              <img src="images/catlove4.jpg" alt="Image of woman and the cat she loves">
+          </figure>
+           <figure>
+              <img src="images/pellican.png" alt="Pellican, Galapogos Islands">
+          </figure>
+          <figure>
+              <img src="images/DancingTilDuskPoster2019_v11.jpg" alt="poster concept for telling people to be more careful when connecting to th Web">
+          </figure>
+          <figure>
+              <img src="images/Alt-Another-Bike-Poster-6.jpg" alt="illustration of two bicyclists at the beach">
+         </figure>
+         <figure>
+              <img src="images/chip-kidd-as-batmanv3.jpg" alt="Illustration of Chipp Kidd in Batman costume">
+          </figure>
+
+          <figure>
+              <img src="images/MagAmericanStyleCoverx1200.jpg" alt="American Style magazine cover with broaches">
+         </figure>
+        </main>
+        <footer>
+            <p>© 2024 Deane Nettles. All Rights Reserved.</p>
+         </footer>
+    </div><!-- end WRAP -->
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/featherlight.min.js" charset="utf-8"></script>
+    <script src="js/featherlight.gallery.min.js" charset="utf-8"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.gallery').featherlightGallery({
+                gallery: {
+                    fadeIn: 300,
+                    fadeOut: 300
+                },
+                openSpeed:    300,
+                closeSpeed:   300
+            });
+            $('.gallery2').featherlightGallery({
+                gallery: {
+                    next: 'next »',
+                    previous: '« previous'
+                },
+                variant: 'featherlight-gallery2'
+            });
+        });
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//stats.g.doubleclick.net/dc.js','ga');
+
+        ga('create', 'UA-5342062-6', 'noelboss.github.io');
+        ga('send', 'pageview');
+    </script>
+              
+</body>
+</html>
