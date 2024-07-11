@@ -92,7 +92,7 @@
     .fl-page .btn-download { float: none; margin-bottom: 1em; }
 }
 
-body {margin:0; padding:0;}
+body.fl-page {margin:0; padding:0; background-color:#ccc;}
 
 .flex-container {display:flex; justify-content:center; flex-wrap:wrap; flex-direction: row; gap:2.5%; padding:10px;}
 
