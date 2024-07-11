@@ -23,8 +23,8 @@
 		</nav>
 		<div class="container">
 			<header>
-				<h1>Deane Nettles Associates llc</h1>
-				<h3>Advertising, Graphic Design and Illustration</h3>
+				<h1>Deane Nettles Associates&nbsp;llc</h1>
+				<h3>Advertising, Graphic Design and&nbsp;Illustration</h3>
 				<p>Creating exciting ideas and producing extraordinary results.</p>
 			</header>
 
@@ -32,9 +32,9 @@
 			<div class="row flex-container">
 					<a class="thumbnail gallery2" href="images/StopThinkConnectv5.5x1200.jpg"><img src="images_sq/StopThinkConnect2.png" alt="Stop. Think. Connect. Before you click a link on the Web."></a>
 					<a class="thumbnail gallery2" href="images/WAS_car_wrap_2019.jpg"><img src="images_sq/WAS_car_wrap_2019x360.jpg" alt="Car wrap of Toyota for Washington Auto Show in front to the U.S. Capitol"></a>
-					<a class="thumbnail gallery2" href="assets/images/feed.jpg"><img src="assets/images/feed.thumb.jpg" alt=""></a>
-					<a class="thumbnail gallery2" href="assets/images/black.jpg"><img src="assets/images/black.thumb.jpg" alt=""></a>
-					<a class="thumbnail gallery2" href="assets/images/red_and_yellow.jpg"><img src="assets/images/red_and_yellow.thumb.jpg" alt="feather"></a>
+					<a class="thumbnail gallery2" href="images/buffjam.jpg"><img src="images_sq/buffjam_sq.jpg" alt="Poster for "></a>
+					<a class="thumbnail gallery2" href="images/FMCS2016.jpg"><img src="images_sq/FMCS2016x510.jpg" alt="Convention program for Federal Mediation and Concilliation Service"></a>
+					<a class="thumbnail gallery2" href="images/ArtToDineFor.jpg"><img src="images_sq/ArtToDineFor_sq.jpg" alt="Design and illustration for Art To Dine For for annual Creative Alliance event"></a>
 					<a class="thumbnail gallery2" href="assets/images/droplets.jpg"><img src="assets/images/droplets.thumb.jpg" alt=""></a>
 					<a class="thumbnail gallery2" href="assets/images/blue.jpg"><img src="assets/images/blue.thumb.jpg" alt=""></a>
 					<a class="thumbnail gallery2" href="assets/images/feed.jpg"><img src="assets/images/feed.thumb.jpg" alt=""></a>
@@ -46,13 +46,15 @@
 			</div>
 		</div>
 
-		<script src="assets/javascripts/jquery-1.7.0.min.js"></script>
-		<script src="release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/javascripts/jquery-3.7.1.min.js"></script>
+		<script src="release/featherlight.min.js" charset="utf-8"></script>
+		<script src="release/featherlight.gallery.min.js" charset="utf-8"></script>
 
 		<script>
 			$(document).ready(function(){
-				$('.gallery').featherlightGallery({
+
+			/* load slide gallery */
+			$('.gallery').featherlightGallery({
 					gallery: {
 						fadeIn: 300,
 						fadeOut: 300
@@ -60,6 +62,7 @@
 					openSpeed:    300,
 					closeSpeed:   300
 				});
+				/* load next and previous */
 				$('.gallery2').featherlightGallery({
 					gallery: {
 						next: 'next »',
@@ -69,6 +72,8 @@
 				});
 			});
 
+			/* Google Analytics? */
+			/*
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -76,6 +81,9 @@
 
 			ga('create', 'UA-5342062-6', 'noelboss.github.io');
 			ga('send', 'pageview');
+			*/
+
+
 		</script>
 	</body>
 </html>

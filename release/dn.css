@@ -102,8 +102,14 @@ header {padding-top:40px;}
 img {width:100%;}
 
 h1, h3 {margin:0; padding:0; text-align:center;}
-h1 {line-height:1; margin-bottom:20px;}
-h3 {margin-top:20px;}
+.fl-page h1 {font-size:50px; line-height:1; margin-bottom:20px;}
+.fl-page h3 {font-size:30px;  margin-top:20px;}
+
+@media screen and (min-width:850px) {
+    .fl-page h1 {font-size:70px; line-height:1; margin-bottom:20px;}
+    .fl-page h3 {font-size:40px;  margin-top:20px;}
+}
+
 p {text-align:center;}
 
 .gallery2 {margin-bottom:20px;}
