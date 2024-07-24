@@ -27,12 +27,13 @@
 			<header>
 				<a href="index.html"><img src="images/nettle.svg" alt="image of DNA logo, a hand making an 'okay' gesture"></a>
 				<h1>Deane Nettles Associates</h1>
-				<h3>Advertising</h3>
+				<h3>Graphic Design</h3>
 				<p>Creating exciting ideas and producing extraordinary results.</p>
 			</header>
 
 
 			<div class="row flex-container">
+
 				<!--Creative Alliance-->
 					<a class="thumbnail gallery2" href="images/ArtToDineFor.jpg"><img src="images_sq/ArtToDineFor_sq.jpg" alt="Art to Dine For program for Creative Alliance, Baltimore. Events sold more tickets than any previous year."></a>
 					<!-- Dancing til Dusk-->
@@ -51,7 +52,6 @@
 					<a class="thumbnail gallery2" href="images/TardiGras.jpg"><img src="images_sq/TardiGras_sq.jpg" alt="A late Mardi Gras party with the Wild Anacostias, a New Orleans-style band from the suburbs of Washington DC"></a>
 					<!-- Polish Embassy -->
 					<a class="thumbnail gallery2" href="images/PolishEmbassyBannerFinal.jpg"><img src="images_sq/PolishEmbassyBanner_sq.jpg" alt="Banner for the Polish embassy to display at pop-up functions."></a>
-								
 				</div>
 
 
@@ -59,6 +59,8 @@
 				<p><a href="//noelboss.com">Featherlight &copy; Noël Bossart.</a> Made in Switzerland.</p>
 			</div>
 		</div>
+
+
 
 		<script src="assets/javascripts/jquery-3.7.1.min.js"></script>
 		<script src="release/featherlight.min.js" charset="utf-8"></script>
@@ -97,6 +99,14 @@
 			ga('create', 'UA-5342062-6', 'noelboss.github.io');
 			ga('send', 'pageview');
 			*/
+
+			<script>
+    $.featherlightGallery.prototype.afterContent = function () {
+        var caption = this.$currentTarget.find('img').attr('title');
+        this.$instance.find('.caption').remove();
+        $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+    }
+</script>
 		</script>
 	</body>
 </html>

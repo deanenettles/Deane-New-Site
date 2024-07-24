@@ -4,12 +4,12 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>Deane Nettles Advertising &amp; Graphic Design</title>
 		<link href="assets/stylesheets/xbootstrap.min.css" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="release/featherlight.css">
-		<link type="text/css" rel="stylesheet" href="release/featherlight.gallery.css">
+		<link type="text/css" rel="stylesheet" href="release/featherlight.min.css">
+		<link type="text/css" rel="stylesheet" href="release/featherlight.gallery.min.css">
 		<link type="text/css" rel="stylesheet" href="release/dn.css">
 
 		<style type="text/css">
-
+.caption {color:white;}
 		</style>
 	</head>
 	<body class="fl-page">
@@ -77,7 +77,15 @@
 					},
 					variant: 'featherlight-gallery2'
 				});
+				$('td.gallery2').each(function(e)) {
+        var $caption = $('<div class="caption">');
+        $caption.text($('img', $(this)).attr('alt'))
+        $(this).append($caption);
+    }
+				
 			});
+
+			
 
 			/* Google Analytics? */
 			/*
