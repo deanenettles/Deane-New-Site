@@ -31,16 +31,17 @@
 
 
 			<div class="row flex-container">
+
 				<!--Creative Alliance-->
 					<a class="thumbnail gallery2" href="images/ArtToDineFor.jpg"><img src="images_sq/ArtToDineFor_sq.jpg" alt="Art to Dine For program for Creative Alliance, Baltimore. Events sold more tickets than any previous year."></a>
 					<!-- Dancing til Dusk-->
 					<a class="thumbnail gallery2" href="images/DTD_Poster_2023_v4_portfolio.jpg"><img src="images_sq/DTD_Poster_2023_v4_portfoliosq.jpg" alt="Poster for 16th annual Dancing til Dusk event in Seattle parks"></a>
 					<!--Arlington Transportation-->
-					<a class="thumbnail gallery2" href="images/ATP-Sales-Packet-DR3-1v32.gif"><img src="images_sq/ATP-Sales-Packet-DR3-1v325sq.jpg" alt="Sales packet touting the advantages and offerings of rlington Transportation, and how they help both residents and businesses"></a>
+					<a class="thumbnail gallery2" href="images/ATP-Sales-Packet-DR3-1v32.gif"><img src="images_sq/ATP-Sales-Packet-DR3-1v325sq.jpg" alt="Sales packet touting the advantages and offerings of Arlington Transportation, and how they help both residents and businesses"></a>
 					<!--Federal Mediation and Concilliation Service-->
 					<a class="thumbnail gallery2" href="images/FMCS.gif"><img src="images_sq/FMCS_sq.jpg" alt="Convention program for Future@Work, a national labor-management conference put on by the Federal Mediation and Concilliation Service, a quasi-governmental organization."></a>
 					<!-- Mobility Poster -->
-					<a class="thumbnail gallery2" href="images/MobilityPoster.jpg"><img src="images_sq/MobilityPoster_sq.jpg" alt="Innovation in Mobility Pblic Policy Summit poster"></a>
+					<a class="thumbnail gallery2" href="images/MobilityPoster.jpg"><img src="images_sq/MobilityPoster_sq.jpg" alt="Innovation in Mobility Public Policy Summit poster"></a>
 					<!-- Technology Trends Group -->
 					<a class="thumbnail gallery2" href="images/TTGPocketFolder.jpg"><img src="images_sq/TTG_Pocket_Folder_sq.jpg" alt="Technology Trends Group pocket folder and information sheets for company specializing in technology upgrades for government agencies and museums. Revised logo and added curve on bottom-right."></a>
 					<!-- Car Wrap -->
@@ -96,6 +97,14 @@
 			ga('create', 'UA-5342062-6', 'noelboss.github.io');
 			ga('send', 'pageview');
 			*/
+
+			<script>
+    $.featherlightGallery.prototype.afterContent = function () {
+        var caption = this.$currentTarget.find('img').attr('title');
+        this.$instance.find('.caption').remove();
+        $('<div class="caption">').text(caption).appendTo(this.$instance.find('.featherlight-content'));
+    }
+</script>
 		</script>
 	</body>
 </html>
