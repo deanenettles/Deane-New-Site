@@ -96,7 +96,7 @@ body.fl-page {margin:0; padding:0; background-color:#ccc;}
 
 .flex-container {display:flex; justify-content:center; flex-wrap:wrap; flex-direction: row; gap:2.5%; padding:10px;}
 
-.gallery2 {width:250px; margin:0 0 18px0;}
+.gallery2 {width:250px; margin:0 0 18px 0;}
 img {width:100%;}
 
 .fl-page header {padding-top:40px;}
