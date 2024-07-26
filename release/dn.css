@@ -26,7 +26,7 @@
     .fl-page .row { margin-top: 2em;}
 
     .fl-page .btn-lg span { font-size: 0.7em; }
-    .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+    .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em; padding-bottom:40px;}
     .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
     .fl-page .github { margin: 2em 0; }
     .fl-page .github a { vertical-align: top; }
