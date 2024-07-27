@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Deane Nettles Advertising &amp; Graphic Design</title>
+		<link href="assets/stylesheets/xbootstrap.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="release/featherlight.min.css">
+		<link type="text/css" rel="stylesheet" href="release/featherlight.gallery.min.css">
+		<link type="text/css" rel="stylesheet" href="release/dn.css">
+
+		<style>
+.caption {color:white;}
+.flex-container {padding:0 2rem 0 2rem;}
+.flex-container div {width:18rem; background-color:teal; color:white; padding:.5rem 1rem 1rem 1rem; text-align:center;  font-family:"helvetica neue", helvetica, arial, sans-serif; margin-bottom:1.5rem; border-radius:.5rem; }
+.flex-container div:nth-child(even) {background-color:darkorange;}
+.flex-container div h2 {margin-bottom:.5rem;}.flex-container div p {margin-top:0;}
+		</style>
+	</head>
+	<body class="fl-page">
+		<nav class="flex-container">
+			<ul>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="logos.html">Logos</a></li>
+				<li><a href="illustration.html">Illustration</a></li>
+				<li><a href="ads.html">Advertising</a></li>
+				<li><a href="pubs.html">Publications</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<header>
+				<a href="index.html"><img src="images/nettle.svg" alt="image of DNA logo, a hand making an 'okay' gesture"></a>
+				<h1>Deane Nettles Associates</h1>
+				<h3>Advertising, Graphic Design and&nbsp;Illustration</h3>
+				<p>Creating exciting ideas and producing extraordinary results.</p>
+			</header>
+
+
+			<div class="row flex-container">
+
+				<div>
+					<h2>Design</h2>
+					<p>With expertice in advertising, design, direct marketing and websites, our work will hit your target market.</p>
+				</div>
+				<div>
+					<h2>Logos and Symbols</h2>
+					<p>Our symbols and branding are versatile representatives of your company and get you noticed.</p>
+				</div>
+				<div>
+					<h2>Illustration</h2>
+					<p>Our vibrant illustrations can help your message stand out and get noticed.</p>
+				</div>
+				<div>
+					<h2>Production</h2>
+					<p>Years of experience will get your project completed quickly and accurately with maximum editability.</p>
+				</div>
+				<div>
+					<h2>Training</h2>
+					<p>Our instruction in beginning and advanced software, design, typography, html and css can make you a master.</p>
+				</div>
+		</div>
+		<div class="footer text-right">
+			<p>© Deane Nettles and respective clients. All rights reserved.</p>
+		</div>
+
+		<script src="assets/javascripts/jquery-3.7.1.min.js"></script>
+		<script src="release/featherlight.min.js" charset="utf-8"></script>
+		<script src="release/featherlight.gallery.min.js" charset="utf-8"></script>
+
+		<script>
+			/* load */
+			$(document).ready(function(){
+
+			/* load slide gallery */
+			$('.gallery').featherlightGallery({
+					gallery: {
+						fadeIn: 300,
+						fadeOut: 300
+					},
+					openSpeed:    300,
+					closeSpeed:   300
+				});
+				/* load next and previous */
+				$('.gallery2').featherlightGallery({
+					gallery: {
+						next: 'next »',
+						previous: '« previous'
+					},
+					variant: 'featherlight-gallery2'
+				});
+				$('td.gallery2').each(function(e)) {
+        var $caption = $('<div class="caption">');
+        $caption.text($('img', $(this)).attr('alt'))
+        $(this).append($caption);
+    }
+				
+			});
+
+			
+
+			/* Google Analytics? */
+			/*
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//stats.g.doubleclick.net/dc.js','ga');
+
+			ga('create', 'UA-5342062-6', 'noelboss.github.io');
+			ga('send', 'pageview');
+			*/
+
+		</script>
+	</body>
+</html>
