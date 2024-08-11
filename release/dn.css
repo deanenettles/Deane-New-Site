@@ -143,5 +143,5 @@ input, select, textarea, button {display:block; margin-bottom:10px; font-size:1r
 /* Adjust widths to work with site; wrapper set to margin: 0 auto to center on page */
 input[type=text], input[type=email], textarea {width:100%; max-width:600px;}
 
-button[type=send] {padding:3px 8px;}
 select {padding:6px 4px;}
+button[type=send], button[type=reset] {padding:3px 8px;}
