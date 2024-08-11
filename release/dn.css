@@ -5,7 +5,7 @@
     .fl-page h1,
     .fl-page h2,
     .fl-page h3,
-    .fl-page h4 {
+    .fl-page h4  {
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 200;
         letter-spacing: -1px;
@@ -16,7 +16,11 @@
     .fl-page h1 span { font-size: 1.875rem; color: #333;}
     .fl-page h3 { font-size: 2rem; margin-top:0;}
     .fl-page h4 { font-size: 2rem; }
-    .fl-page p {
+    .fl-page p,
+    .fl-page input,
+    .fl-page select,
+    .fl-page button,
+    .fl-page textarea {
         font-family: "IBM Plex Sans", sans-serif;
         font-weight: 300;
         font-style: normal;
@@ -132,3 +136,10 @@ nav a:hover, nav a:focus, nav a:active {color:#aaa;}
 /* set slide show to max height 90% view screen */
  .fl-page .featherlight-content {max-height: 90vh;}
 
+/* FORMS */
+
+/* inputs are be default inline. This makes them block elements */
+input, select, textarea, button {display:block; margin-bottom:10px; font-size:1rem; padding:4px;}
+input[type=text], input[type=email], textarea {width:100%; max-width:600px;}
+button[type=send] {padding:3px 8px;}
+select {padding:6px 4px;}
