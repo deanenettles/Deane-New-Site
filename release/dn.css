@@ -139,9 +139,13 @@ nav a:hover, nav a:focus, nav a:active {color:#aaa;}
 /* FORMS */
 
 /* inputs are be default inline. This makes them block elements */
-input, select, textarea, button {display:block; margin-bottom:10px; font-size:1rem; padding:4px;}
+input, select, textarea, button {display:block; margin-bottom:10px; font-size:1rem; padding:4px; border:0; border-radius:6px;}
 /* Adjust widths to work with site; wrapper set to margin: 0 auto to center on page */
 input[type=text], input[type=email], textarea {width:100%; max-width:600px;}
 
 select {padding:6px 4px;}
-button[type=send], button[type=reset] {padding:3px 8px;}
+button[type=submit], button[type=reset] {padding:3px 8px;}
+
+button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:red; color:white;}
+
+button[type=reset]:hover, button[type=reset]:focus, button[type=reset]:active {background-color:red; color:white;}
