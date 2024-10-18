@@ -2,6 +2,11 @@
 
 * {box-sizing:border-box;}
 
+/* STRUCTURE */
+
+.wrap {width:100%; max-width:800px; margin:0 auto; padding:20px;}
+
+
 @media all {
     .lightbox { display: none; }
 
@@ -124,6 +129,8 @@ h1, h3 {margin:0; padding:0; text-align:center; }
 p {text-align:center;}
 
 .gallery2 {margin-bottom:20px;}
+
+/* NAVIGATION */
 
 nav {background-color:black; padding:0;}
 
