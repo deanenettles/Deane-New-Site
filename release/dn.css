@@ -2,8 +2,12 @@
 
 * {box-sizing:border-box;}
 
+/* LIGHTBOX */
+
 @media all {
     .lightbox { display: none; }
+
+    /* FONTS */
 
     .fl-page h1,
     .fl-page h2,
@@ -19,6 +23,8 @@
     .fl-page h1 span { font-size: 1.875rem; color: #333;}
     .fl-page h3 { font-size: 2rem; margin-top:0;}
     .fl-page h4 { font-size: 2rem; }
+
+    /* FORM */
    body,
     .fl-page input,
     .fl-page select,
@@ -36,8 +42,12 @@
     .fl-page .row { margin-top: 2em;}
 
     .fl-page .btn-lg span { font-size: 0.7em; }
+
+    /* FOOTER */
     .fl-page .footer { margin-top: 3em; color: #333; font-size: 0.9em; padding-bottom:2.5rem;}
     .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+
+    /* GITHUB? */
     .fl-page .github { margin: 2em 0; }
     .fl-page .github a { vertical-align: top; }
 
@@ -102,15 +112,22 @@
     .fl-page .btn-download { float: none; margin-bottom: 1em; }
 }
 
+/* BODY */
 body.fl-page {margin:0; padding:0; background-color:#ccc;}
 
-.flex-container {display:flex; justify-content:center; flex-wrap:wrap; flex-direction: row; gap:2.5%; padding:10px;}
+/* GALLERY */
+.flex-container {display:flex; justify-content:center; flex-wrap:wrap; flex-direction: row; gap:2.5%; padding:10px; width:100%; max-width:1200px; margin:0 auto;}
 
-.gallery2 {width:250px; margin:0 0 18px 0;}
+.gallery2 {width:250px; margin:0 0 20px 0;}
+
+/* IMG */
 img {width:100%;}
 
+/* HEADER */
 .fl-page header {padding-top:40px;}
 .fl-page header img {display:block; width:80px; margin:0 auto 20px auto;}
+
+/* FONTS */
 
 h1, h3 {margin:0; padding:0; text-align:center; }
 .fl-page h1 {font-size:50px; line-height:1; margin-bottom:10px; letter-spacing: 0px;}
@@ -123,7 +140,9 @@ h1, h3 {margin:0; padding:0; text-align:center; }
 
 p {text-align:center;}
 
-.gallery2 {margin-bottom:20px;}
+
+
+/* NAVIGATION */
 
 nav {background-color:black; padding:0;}
 
@@ -141,7 +160,7 @@ nav a:hover, nav a:focus, nav a:active {color:#aaa;}
 
 /* FORMS */
 
-/* inputs are be default inline. This makes them block elements */
+/* inputs are by default inline. Here I make them block elements */
 input, select, textarea, button {display:block; margin-bottom:10px; font-size:1rem; padding:4px; border:0; border-radius:6px;}
 /* Adjust widths to work with site; wrapper set to margin: 0 auto to center on page */
 input[type=text], input[type=email], textarea {width:100%; max-width:600px;}
