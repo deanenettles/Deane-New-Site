@@ -1,85 +1,123 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<title>Deane Nettles | Advertising</title>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Deane Nettles | Advertising</title>
 
-		<link href="assets/stylesheets/xbootstrap.min.css" rel="stylesheet">
-		<link type="text/css" rel="stylesheet" href="release/featherlight.min.css">
-		<link type="text/css" rel="stylesheet" href="release/featherlight.gallery.min.css">
-		<link type="text/css" rel="stylesheet" href="release/dn.css">
+    <link href="assets/stylesheets/xbootstrap.min.css" rel="stylesheet">
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="release/featherlight.min.css"
+    >
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="release/featherlight.gallery.min.css"
+    >
+    <link type="text/css" rel="stylesheet" href="release/dn.css">
 
-		<style>
-            .wrap {width:100%; max-width:600px; margin:0 auto; padding:20px;}
-			.wrap p{text-align:left;}
-			.footer p{text-align:center;}
+    <style>
+      .wrap {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .wrap p {
+        text-align: left;
+      }
+      .footer p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="fl-page">
+    <nav>
+      <ul class="flex-container">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="indexCopy.html">Home 2</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="logos.html">Logos</a></li>
+        <li><a href="illustration.html">Illustration</a></li>
+        <li><a href="ads.html">Advertising</a></li>
+        <li><a href="pubs.html">Publications</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <header>
+        <a href="index.html"
+          ><img
+            src="images/nettle.svg"
+            alt="image of DNA logo, a hand making an 'okay' gesture"
+        ></a>
+        <h1>Deane Nettles Associates</h1>
+        <p>Creating exciting ideas and producing extraordinary results.</p>
+        <h3>Contact</h3>
+      </header>
+    </div>
 
+    <div class="wrap">
+      <h2>Contact us:</h2>
+      <form
+        action="mailto:sample@sample.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <!-- Action should be changed to your email address.-->
+        <!-- method can be POST or GET. Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field. POST has no size limitations, and can be used to send large amounts of data. -->
+        <!-- Form fields go here -->
+        <input
+          type="text"
+          name="firstname"
+          required
+          autofocus
+          placeholder="First Name"
+        >
 
-		</style>
-	</head>
-    <body class="fl-page">
-        <nav>
-			<ul class="flex-container">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="indexCopy.html">Home 2</a></li>
-				<li><a href="design.html">Design</a></li>
-				<li><a href="logos.html">Logos</a></li>
-				<li><a href="illustration.html">Illustration</a></li>
-				<li><a href="ads.html">Advertising</a></li>
-				<li><a href="pubs.html">Publications</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="container">
-			<header>
-				<a href="index.html"><img src="images/nettle.svg" alt="image of DNA logo, a hand making an 'okay' gesture"></a>
-				<h1>Deane Nettles Associates</h1>
-				<p>Creating exciting ideas and producing extraordinary results.</p>
-				<h3>Contact</h3>
-			</header>
-        </div>
+        <!-- NAME -->
+        <input type="text" name="lastname" required placeholder="Last Name">
 
-        <div class="wrap">
-			<h2>Contact us:</h2>
-<form action="mailto:sample@sample.com" method="post" enctype="text/plain">
-<!-- Action should be changed to your email address.-->
-<!-- method can be POST or GET. Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field. POST has no size limitations, and can be used to send large amounts of data. -->
-	<!-- Form fields go here -->
-<input type="text" name="firstname" required autofocus placeholder="First Name">
+        <!-- COMPANY NAME -->
+        <input type="text" name="company" required placeholder="Company">
 
-<!-- NAME -->
-<input type="text" name="lastname" required placeholder="Last Name">
+        <!-- EMAIL -->
+        <input
+          type="email"
+          name="mail"
+          required
+          placeholder="Enter a valid email address"
+        >
+        <!-- Field will automatically check for a valid email format -->
 
-<!-- COMPANY NAME -->
-<input type="text" name="company" required placeholder="Company">
+        <!-- REASON -->
+        <select name="reason">
+          <option value="instruction">Design Services</option>
+          <option value="newsletter">Training services</option>
+          <option value="other">Other</option>
+        </select>
 
-<!-- EMAIL -->
-<input type="email" name="mail" required placeholder="Enter a valid email address">
-<!-- Field will automatically check for a valid email format -->
+        <!-- COMMENT -->
+        <textarea
+          name="comment"
+          cols="60"
+          rows="4"
+          placeholder="Comments"
+        ></textarea>
 
-<!-- REASON -->
-<select name="reason">
-	<option value="instruction">Design Services</option>
-	<option value="newsletter">Training services</option>
-		<option value="other">Other</option>
-</select>
+        <!-- cols = how many characters on a line are normally displayed and rows = indicated how many lines are displayed. -->
 
-<!-- COMMENT -->
-<textarea name="comment" cols="60" rows="4" placeholder="Comments"></textarea>
+        <!-- SEND AND RESET -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
 
-<!-- cols = how many characters on a line are normally displayed and rows = indicated how many lines are displayed. -->
-
-<!-- SEND AND RESET -->
-<button type="submit">Submit</button>
-<button type="reset">Reset</button>
-</form>
-
-          <div class="footer">
-            <p>©Deane Nettles and respective companies. All rights reserved.</p>
-          </div>
-        </div><!-- end wrap -->
-
-
-    </body>
+      <div class="footer">
+        <p>©Deane Nettles and respective companies. All rights reserved.</p>
+      </div>
+    </div>
+    <!-- end wrap -->
+  </body>
 </html>

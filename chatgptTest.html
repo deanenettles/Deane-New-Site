@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Hover Zoom</title>
+  <link rel="stylesheet" href="css/gpt.css">
+</head>
+<body>
+
+  <img src="images_sq/des_sq/ArtToDineFor_sq.jpg" alt="This is the alt text" class="hover-img">
+
+  <div class="overlay" id="overlay">
+    <img src="images/design/ArtToDineFor.jpg" id="largeImg" class="large-img" alt="Art to Dine For brochure and illustrations">
+    <p id="altText"></p>
+  </div>
+
+  <script src="script.js">
+    const smallImg = document.querySelector('images_sq/des_sq/ArtToDineFor_sq.jpg');
+const overlay = document.getElementById('overlay');
+const largeImg = document.getElementById('largeImg');
+const altText = document.getElementById('altText');
+
+// Replace with your large image source
+const largeImgSrc = 'images/design/ArtToDineFor.jpg';
+
+smallImg.addEventListener('mouseenter', () => {
+  largeImg.src = largeImgSrc;
+  altText.textContent = smallImg.alt;
+  overlay.style.display = 'flex';
+});
+
+overlay.addEventListener('mouseleave', () => {
+  overlay.style.display = 'none';
+});
+
+  </script>
+</body>
+</html>
